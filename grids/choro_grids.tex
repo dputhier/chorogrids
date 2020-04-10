@@ -1,0 +1,259 @@
+% arara: lualatex
+\documentclass{article}
+\usepackage{array,collcell,graphicx}
+\usepackage{realbookchords}[2013/09/07]
+\usepackage{multicol}
+
+\setlength{\unitlength}{12pt}
+\renewcommand{\|}{\rule[-.2\unitlength]{.7pt}{1.4\unitlength}} % measure bar
+\newcommand{\zif}[1]{\multicolumn{4}{@{}l}{\fbox{\sffamily #1}}\\[3pt]} % ziffer
+\newcommand{\hd}{\Large\textsf{\o}} % half diminished
+
+\protected\def\qu{\rotatebox{-45}{\rule[.75ex]{2pt}{8pt}}}
+
+\newenvironment{chordprog}[1]
+{%
+	\par
+	\SongTitle{#1}%
+	\par\medskip\noindent
+	\tabular{@{}l !{\|} l !{\|} l !{\|} l}%
+}
+{\endtabular\bigskip\bigskip}
+
+\newcolumntype{Z}{>{\collectcell\rbc}l <{\endcollectcell}@{\,}}
+\newenvironment{chordprog*}[1]
+{%
+	\par
+	\SongTitle{#1}%
+	\par\medskip\noindent
+	\scriptsize\tabular{@{} ZZZZ !{\|} ZZZZ !{\|} ZZZZ !{\|} ZZZZ}%
+}
+{\endtabular\bigskip\bigskip}
+% \setmainfont{Century Gothic}
+\RBCsetup{songtitle-format-center={\rmfamily\LARGE\bfseries}}
+
+
+\begin{document}
+
+
+%=======================================================
+% Na Gloria
+%=======================================================
+
+\SongTitle{Na gloria}
+\begin{multicols}{2}
+	
+	\begin{chordprog*}{}
+		\zif{A}
+		F6   && F0 &&  F6  &&       && F6 && F\#0 &&  Gm  &&  \\
+		Gm &&       && Gm &&       && C7 &&          && F       && \\
+		F6   && F0 &&  F6  &&       && F7 &&    F7/A      &&  Bb  &&  \\
+		Bb   && B0 &&  F    && D7 && Gm&& C7    &&  F6  &&  \\
+	\end{chordprog*}{}
+	
+	\begin{chordprog*}{}
+		\zif{B}
+		A7      && C\#0 &&  Dm  &&       && Eb0 && D7 &&  Gm  &&  \\
+		Gm/E && Gm/Bb  &&  Dm  &&       && E7 &&   && A7 && \\
+	\end{chordprog*}{}	
+	
+	\begin{chordprog*}{}
+		\zif{C}
+		Bb6      &&        &&  Bb6  &&       && Bb6 &&   		&&  F7  &&  \\
+		F7         &&        &&  F7     &&       && F7    &&          && Bb6       && \\
+		Bb6		&&			&& Bb6	&& 		&&	G\#0	&& G7	&&	Dm	&& \\		
+		Ebm		&&	E0		&& Bb	&& 	F7	&&	Bb	&& F7	&&	B6	&& \\		
+	\end{chordprog*}{}
+\end{multicols}
+
+
+\RBCsetup{songtitle-pos-right=r}
+
+%=======================================================
+% Benzinho
+%=======================================================
+
+\SongTitle{Benzinho}
+
+
+
+\begin{multicols}{2}
+\begin{chordprog*}{}
+\zif{A1}
+Dm && 		&& Dm		&& && A7 &&		&& A7 && \\
+Bb7	&&		&& Bb7 	&& 			&&	 A7 &&	&&	 A7 && \\
+D7 &&		&& D7 	&&		&& Gm && 	&&	Gm && \\
+E7 && 		&& E7 	&& 		&&	A7 &&		&&	 A7 && \\
+\end{chordprog*}
+
+
+
+\begin{chordprog*}{}
+\zif{A2}
+Dm && 		 && Dm		&& 			&& A7 &&		&& A7 && \\
+Bb7	&& 		 && Bb7 	&& 			&&	 A7 &&	&&	 A7 && \\
+D7 && 		 && D7 	 &&		 		&& Gm && 	&&	Gm && \\
+Dm/F && Bb7 	&& Eb7 &&	A7 		&& Dm && && C7 && \\
+\end{chordprog*}
+
+
+
+\begin{chordprog*}{}
+\zif{B1}
+F && 		&&F\#0 && &&C7/G && && C7/G &&\\
+Gm && 	 &&G\#0 && && Dm/A && && C7 &&\\
+F7 && && D7 	&& 	&& G7 && && G7 &&\\
+Eb7 && 	 && C7 && && F && Am/E && Gm/D && C7 \\
+\end{chordprog*}
+
+
+\begin{chordprog*}{}
+\zif{B2}
+F && 		&&F\#0 && &&C7/G && && C7/G &&\\
+Bb6 && 		&&	A7 	&&	&& Dm &&	&& D7	&& \\
+Bb6 && 		&&	B0 	&&	&& F7 &&	&& D7	&& \\
+G7 &&	&& C7 && 	&&	F &&	&& F &&\\
+\end{chordprog*}
+
+
+\end{multicols}
+	
+
+\vspace{1cm}
+
+
+\newpage
+%=======================================================
+% Cochichando
+%=======================================================
+
+\SongTitle{Amigo Velho}
+
+\begin{multicols}{2}
+	
+	
+	\begin{chordprog*}{}
+		\zif{A}
+		C6   &&  &&  C6  &&       && C6 &&  &&  Dm  &&  \\
+		Dm &&       && Dm &&       && G7 &&          && C       && \\
+		C   &&  &&  C  &&       && C7 &&          &&  F  &&  \\
+		F   &&  F\#0 &&  C    && A7 && Dm&& G7    &&  C  &&  \\
+	\end{chordprog*}{}
+	
+	\begin{chordprog*}{}	
+		\zif{B}
+		E7      &&  &&  E7  &&       && E7 &&  &&  A7  &&  \\
+		D7&&   &&  D7  &&       && D7 &&   && G7 && \\
+	\end{chordprog*}{}
+
+
+\end{multicols}
+
+\vspace{1cm}
+
+%=======================================================
+% Asa Branca
+%=======================================================
+
+\SongTitle{Asa Branca}
+
+\begin{multicols}{2}
+
+
+\begin{chordprog*}{}
+	\zif{A}
+	G6   &&  &&  G6  &&       && C6 &&  &&  C6  &&  \\
+	G6 &&       && D7 &&       && G6 &&          && G6       && \\
+\end{chordprog*}{}
+
+\begin{chordprog*}{}
+	\zif{B}
+	G6   &&  &&  G6  &&       && C6 &&  &&  C6  &&  \\
+	D7   &&  &&  D7    &&  && G6&&     &&  G6  &&  \\
+\end{chordprog*}{}
+
+
+\begin{chordprog*}{}
+	\zif{C}
+	G6   &&  &&  G6  &&       && C7 && D7  &&  G6  &&  \\
+\end{chordprog*}{}
+
+
+\end{multicols}
+
+%=======================================================
+% Cochichando
+%=======================================================
+
+\SongTitle{Cochichando}
+
+\begin{multicols}{2}
+	
+	\begin{chordprog*}{}
+		\zif{A}
+		Dm   &&  &&  A7  &&       && A7 &&  &&  Dm  &&  \\
+		Dm &&       && Am &&       && E7 &&          && A7       && \\
+		Dm   &&  &&  A7  &&       && A7 &&          &&  D7  &&  \\
+		Gm   &&  &&  Dm    &&  && E7&& A7    &&  Dm  &&  \\
+	\end{chordprog*}{}
+	
+	\begin{chordprog*}{}	
+		\zif{B}
+		F      && D7 &&  Gm  &&       && C7 &&  &&  F  &&  \\
+		A7&&   &&  Dm  &&       && G7 &&   && G7 && \\
+		D7&&   && Gm  &&       && E7 &&   && Am && \\
+		B&&  Bm  &&  F &&   D7    && Gm &&  C7 && F && \\
+	\end{chordprog*}{}
+	
+	\begin{chordprog*}{}
+		\zif{C}
+		Dmaj7      &&        &&  Dmaj7  &&   Dmaj7    && F0 &&   	Em	&&    &&  \\
+		F\#m        &&  F\#m/A      &&  B7     &&       && E7    &&          && A7       && \\
+		Dmaj7		&&			&& Dmaj7	&& 		&&	Am	&& D7	&&	Gmaj7	&& \\		
+		Gm		&&	&& Dm		&& B7	&& 	Em	&&	A7	&& Dmaj7	&&	 \\		
+	\end{chordprog*}{}
+\end{multicols}
+
+\newpage
+
+
+%=======================================================
+% Rosa
+%=======================================================
+
+\SongTitle{Rosa (to be continued)}
+
+\begin{multicols}{2}
+	
+	\begin{chordprog*}{}
+		\zif{Intro}
+		Ebmaj7   &&  &&  C\#0  &&       && Bbmaj7 &&  &&  B0  &&  \\
+		Cm &&       && F &&       && Bbmaj7 &&          && F       && \\
+	\end{chordprog*}{}
+	
+	\begin{chordprog*}{}	
+		\zif{A1}
+		Bbmaj7      &&  &&  Bbmaj7  &&  B0     && F &&  &&  F  &&  \\
+		Bbmaj7      &&  &&  Bbmaj7  &&  B0     && F &&  &&  F  &&  \\
+		D7&&   &&  D7  &&       && Gm &&   && Gm && G7 \\
+		Cm&&   && C7  &&       && F &&   && F13b && \\
+	\end{chordprog*}{}
+	
+	\begin{chordprog*}{}
+		\zif{A2}
+		Bbmaj7      &&  &&  Bbmaj7  &&  B0     && F &&  &&  F  &&  \\
+		Fm6      &&  &&  Fm6  &&       && Ebmaj7 &&  &&  Ebmaj7  &&  \\	
+		Ebm      &&  &&  Ebm  &&       && Bbmaj7 &&  &&  B0  &&  \\	
+		Cm      &&  &&  F  &&       && Bb &&  &&  Bb  &&  \\	
+	\end{chordprog*}{}
+
+	\begin{chordprog*}{}
+	\zif{B}
+	D7  &&  Gm &&  Gm  &&       && C\#0 &&  &&  Cm  &&  \\
+	D7   &&  &&  D7  &&       && Gm &&  &&  Gm  &&  \\	
+	C\#0       &&  &&  C\#0   &&       && Dm &&  &&  Dm  &&  \\							
+	\end{chordprog*}{}
+
+\end{multicols}
+
+\end{document}
